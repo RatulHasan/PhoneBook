@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CDIP | PhoneBook</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+		<link href="img/css.png" rel="icon" />
+		<script src="jquery/jquery-1.11.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-2.0.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		navigator.app.exitApp();
+    }
+
+    </script>
+	</head>
+	<body onload="onLoad()">
+		<div data-role="page" data-theme="b">
+			<div data-role="header" style="text-align:center;" data-tap-toggle="false"
+			 data-position="fixed">
+				<!--<img style="margin-top:10px; max-width: 100%;" src="img/header.png"/>-->
+				<span style="margin-top:10px; max-width: 100%; font-size:25px">Head office-PhoneBook</span>
+			</div>
+			<div data-role="main" class="ui-content">
+				<a href="admin_phone.html" class="ui-btn ui-mini">Admin Department</a>
+				<a href="ais_phone.html" class="ui-btn ui-mini">Accounts Department</a>
+				<a href="mis_phone.html" class="ui-btn ui-mini">MIS & IT Department</a>
+				<a href="program_phone.html" class="ui-btn ui-mini">Program Department</a>
+				<a href="finance_phone.html" class="ui-btn ui-mini">Finance Department</a>
+				<a href="remittence_phone.html" class="ui-btn ui-mini">Remittance Department</a>
+				<a href="audit_phone.html" class="ui-btn ui-mini">Audit Department</a>
+				<a href="solar_phone.html" class="ui-btn ui-mini">Solar Department</a>
+				<a href="modern_school_phone.html" class="ui-btn ui-mini">Mordern School Department</a>
+				<a href="education_phone.html" class="ui-btn ui-mini">Education Department</a>
+				<a href="legal_phone.html" class="ui-btn ui-mini">Legal Department</a>
+				<a href="publication_phone.html" class="ui-btn ui-mini">Publication Department</a>
+			</div>
+			<div data-role="footer" style="text-align:center;" data-tap-toggle="false" data-position="fixed">
+				
+		<img style="margin-top:10px; max-width: 30px;" src="img/css.png"/> Center for Development Innovation and Practices 
+	
+			</div>
+		</div>
+	</body>
+</html>

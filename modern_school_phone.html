@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CDIP | PhoneBook</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+		<link href="img/css.png" rel="icon" />
+		<script src="jquery/jquery-1.11.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-2.0.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		navigator.app.exitApp();
+    }
+
+    </script>
+	</head>
+	<body onload="onLoad()">
+	
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-tap-toggle="false" data-position="fixed" 
+			style="text-align:center;">
+			<a href="index.html" class="ui-btn ui-icon-grid ui-btn-icon-left ui-btn-icon-notext">Home</a>
+				<img style="margin-top:15px; width:25px" src="img/css.png"/> PhoneBook
+			<!--<a href="about.html" class="ui-btn ui-icon-info ui-btn-icon-left ui-btn-icon-notext">Information</a>-->	
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<div class="ui-bar ui-bar-b" style="text-align:center;">
+					<h1>Modern School Department</h1>
+				</div>
+		<div data-role="main" class="ui-content">
+				
+			<div class="ui-corner-all custom-corners">
+					
+				<div class="ui-body ui-body-a">				
+					
+				<table class="table table-bordered" style="font-size:15px">
+				<tr>
+				<td class="warning">Name</td>
+				<td class="info">Designation</td>
+				<td class="success">Phone number</td>
+	
+					<tr><td>Md. Hafizul Islam </td><td>	Director (P)	</td><td>	018-44006801</td></tr>
+					<tr><td>Md. Abdul Kadir Sarker </td><td> </td><td>	</td></tr>
+					<tr><td>Md. Tarikul Islam </td><td>Manager (SP)	</td><td> 018-44006825</td></tr>
+					<tr><td>Md. Abdul Jalil </td><td>		</td><td>	 </td></tr>
+					<tr><td>Mintu Chondro Bapari	</td><td>		</td><td>  </td></tr>
+					<tr><td>Md. Liyakot Ali	</td><td>		</td><td>  </td></tr>
+
+</table>
+						
+				 	</div>
+				</div>
+				
+				<link href="jquery/app.css" rel="stylesheet" type="text/css">
+				
+			</div>
+				
+				
+				
+			</div>
+			<div data-role="footer" data-tap-toggle="true" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-top" rel="external"></a></li> 
+						 <li><a onclick="window.history.back()" href="#" data-icon="back"></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
