@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CDIP | PhoneBook</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+		<script src="jquery/jquery-1.11.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-2.0.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		navigator.app.exitApp();
+    }
+
+    </script>
+	<style>
+		table tr {
+			cursor: pointer;
+		}
+	</style>
+	</head>
+	<body onload="onLoad()">
+	
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-tap-toggle="false" data-position="fixed" 
+			style="text-align:center;">
+			<a href="index.html" class="ui-btn ui-icon-grid ui-btn-icon-left ui-btn-icon-notext">Home</a>
+				<img style="margin-top:15px; width:25px" src="img/css.png"/> PhoneBook
+			<!--<a href="about.html" class="ui-btn ui-icon-info ui-btn-icon-left ui-btn-icon-notext">Information</a>-->	
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<div class="ui-bar ui-bar-b" style="text-align:center;">
+					<h1>Admin Department</h1>
+				</div>
+		<div data-role="main" class="ui-content">
+				
+			<div class="ui-corner-all custom-corners">
+					
+				<div class="ui-body ui-body-a">				
+					
+				<table class="table table-bordered" style="font-size:15px">
+				<tr>
+				<td class="warning">Branch Name</td>
+				<td class="success">Phone number</td>
+	
+					<tr><td></td><td> <a href="tel:018-44007216">018-44007216</a></td></tr><tr><td>-</td><td> <a href="tel:018-44007987">018-44007987</a></td></tr><tr><td>Abdullahpur (37)</td><td> <a href="tel:018-44007202">018-44007202</a></td></tr><tr><td>Araihazar (33)</td><td> <a href="tel:018-44007904">018-44007904</a></td></tr><tr><td>Bagmara (61)</td><td> <a href="tel:018-44007905">018-44007905</a></td></tr><tr><td>Bajra (43)</td><td> <a href="tel:01844079306">01844079306</a></td></tr><tr><td>Barera (51)</td><td> <a href="tel:018-44007980">018-44007980</a></td></tr><tr><td>Bhaberchar (35)</td><td> <a href="tel:018-44007892">018-44007892</a></td></tr><tr><td>Bharasarbazar (13)</td><td> <a href="tel:018-44007206">018-44007206</a></td></tr><tr><td>Bholachang (12)</td><td> <a href="tel:018-44007894">018-44007894</a></td></tr><tr><td>Bipulashar (62)</td><td> <a href="tel:01844079305">01844079305</a></td></tr><tr><td>Bitghar (04)</td><td> <a href="tel:018-44007208">018-44007208</a></td></tr><tr><td>Chandragonj (44)</td><td> <a href="tel:01844079317">01844079317</a></td></tr><tr><td>Chapapur (54)</td><td> <a href="tel:018-44007981">018-44007981</a></td></tr><tr><td>Chargash (03)</td><td> <a href="tel:018-44007215">018-44007215</a></td></tr><tr><td>Dasherhat (60)</td><td> <a href="tel:01844079314">01844079314</a></td></tr><tr><td>Dharkhar (02)</td><td> <a href="tel:018-44007214">018-44007214</a></td></tr><tr><td>Faridgonj (50)</td><td> <a href="tel:018-44007983">018-44007983</a></td></tr><tr><td>Gazipur (23)</td><td> <a href="tel:01844079315">01844079315</a></td></tr><tr><td>Haidergonj (47)</td><td> <a href="tel:018-44007203">018-44007203</a></td></tr><tr><td>Hyderabad (05)</td><td> <a href="tel:018-44007207">018-44007207</a></td></tr><tr><td>Joina (15)</td><td> <a href="tel:018-44007899">018-44007899</a></td></tr><tr><td>Juranpur (80)</td><td> <a href="tel:01844079312">01844079312</a></td></tr><tr><td>Kamalla (72)</td><td> <a href="tel:01844079307">01844079307</a></td></tr><tr><td>Kankirhat (68)</td><td> <a href="tel:01844079318">01844079318</a></td></tr><tr><td>Kashimpur (29)</td><td> <a href="tel:01844079316">01844079316</a></td></tr><tr><td>Kashinathpur (91)</td><td> <a href="tel:01844079304">01844079304</a></td></tr><tr><td>Khalipharhat (42)</td><td> <a href="tel:018-44007895">018-44007895</a></td></tr><tr><td>Khilabazar (65)</td><td> <a href="tel:018-44007901">018-44007901</a></td></tr><tr><td>Kuti (01)</td><td> <a href="tel:018-44007213">018-44007213</a></td></tr><tr><td>Laksham (63)</td><td> <a href="tel:018-44007906">018-44007906</a></td></tr><tr><td>Laxmipur (48)</td><td> <a href="tel:018-44007971">018-44007971</a></td></tr><tr><td>Lemua (78)</td><td> <a href="tel:01844079300">01844079300</a></td></tr><tr><td>Madhaiya (52)</td><td> <a href="tel:01844079310">01844079310</a></td></tr><tr><td>Mahamaya (53)</td><td> <a href="tel:018-44007898">018-44007898</a></td></tr><tr><td>Maizdi (59)</td><td> <a href="tel:01844079313">01844079313</a></td></tr><tr><td>Mandari (58)</td><td> <a href="tel:018-44007986">018-44007986</a></td></tr><tr><td>Maona (09)</td><td> <a href="tel:018-44007893">018-44007893</a></td></tr><tr><td>Mathabhanga (89)</td><td> <a href="tel:018-44007210">018-44007210</a></td></tr><tr><td>Meghna (86)</td><td> <a href="tel:018-44007982">018-44007982</a></td></tr><tr><td>Modongonj (34)</td><td> <a href="tel:018-44007907">018-44007907</a></td></tr><tr><td>Modonpur (32)</td><td> <a href="tel:018-44007992">018-44007992</a></td></tr><tr><td>Mohonpur (14)</td><td> <a href="tel:01844079308">01844079308</a></td></tr><tr><td>Moinamoti (16)</td><td> <a href="tel:018-44007976">018-44007976</a></td></tr><tr><td>Mudafforgonj (66)</td><td> <a href="tel:018-44007989">018-44007989</a></td></tr><tr><td>Munshigonj (38)</td><td> <a href="tel:018-44007984">018-44007984</a></td></tr><tr><td>Nabigonj (55)</td><td> <a href="tel:018-44007988">018-44007988</a></td></tr><tr><td>Nangolkot (64)</td><td> <a href="tel:018-44007991">018-44007991</a></td></tr><tr><td>Nayarhat (30)</td><td> <a href="tel:018-44007985">018-44007985</a></td></tr><tr><td>Nimshar (17)</td><td> <a href="tel:01844079309">01844079309</a></td></tr><tr><td>Noapara (56)</td><td> <a href="tel:018-44007201">018-44007201</a></td></tr><tr><td>Porabari( 24)</td><td> <a href="tel:018-44007974">018-44007974</a></td></tr><tr><td>Rahimanagar (19)</td><td> <a href="tel:018-44007977">018-44007977</a></td></tr><tr><td>Raipur (Gou) (84)</td><td> <a href="tel:018-44007205">018-44007205</a></td></tr><tr><td>Raipur (Lax.)(46)</td><td> <a href="tel:018-44007972">018-44007972</a></td></tr><tr><td>Rajabari (25)</td><td> <a href="tel:018-44007975">018-44007975</a></td></tr><tr><td>Ramgonj ((49)</td><td> <a href="tel:018-44007896">018-44007896</a></td></tr><tr><td>Rampur (22)</td><td> <a href="tel:018-44007204">018-44007204</a></td></tr><tr><td>Ruposhdi (08)</td><td> <a href="tel:018-44007902">018-44007902</a></td></tr><tr><td>Salimgonj (07)</td><td> <a href="tel:018-44007212">018-44007212</a></td></tr><tr><td>Sathia (93)</td><td> <a href="tel:01844079303">01844079303</a></td></tr><tr><td>Shahebabad (11)</td><td> <a href="tel:018-44007897">018-44007897</a></td></tr><tr><td>Shahrasti (20)</td><td> <a href="tel:018-44007990">018-44007990</a></td></tr><tr><td>Siddirgonj (76)</td><td> <a href="tel:018-44007979">018-44007979</a></td></tr><tr><td>Sirajdikhan (40)</td><td> <a href="tel:018-44007973">018-44007973</a></td></tr><tr><td>Sonargaon (31)</td><td> <a href="tel:018-44007993">018-44007993</a></td></tr><tr><td>South Bangura (10)</td><td> <a href="tel:018-44007209">018-44007209</a></td></tr><tr><td>Srikail (06)</td><td> <a href="tel:018-44007211">018-44007211</a></td></tr><tr><td>Srinagar (39)</td><td> <a href="tel:018-44007903">018-44007903</a></td></tr><tr><td>Titash (87)</td><td> <a href="tel:01844079311">01844079311</a></td></tr><tr><td>Tongibari (36)</td><td> <a href="tel:018-44007979">018-44007979</a></td></tr><tr><td>Waruk (21)</td><td> <a href="tel:018-44007978">018-44007978</a></td></tr><tr><td>Zamidarhat (41)</td><td> <a href="tel:01844079301">01844079301</a></td></tr><tr><td>Zinshar (75)</td><td> <a href="tel:01844079302">01844079302</a></td></tr>
+
+</table>
+						
+				 	</div>
+				</div>
+				
+			<link href="jquery/app.css" rel="stylesheet" type="text/css">
+				
+			</div>
+				
+				
+				
+			</div>
+			<div data-role="footer" data-tap-toggle="true" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-top" rel="external"></a></li> 
+						 <li><a onclick="window.history.back()" href="#" data-icon="back"></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
